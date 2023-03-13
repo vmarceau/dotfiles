@@ -1,0 +1,21 @@
+add_newline=false
+
+[git_branch]
+truncation_length=12
+
+[line_break]
+disabled = true
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
+[docker_context]
+disabled = true
+
+[package]
+disabled=true
+
+[time]
+disabled=false
+utc_time_offset="0"
+format="| [$time]($style) "

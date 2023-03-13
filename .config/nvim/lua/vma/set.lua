@@ -5,6 +5,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.updatetime = 50
 vim.opt.signcolumn = "yes"
+vim.opt.cursorline = true
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.completeopt = "noinsert,menuone,noselect"
