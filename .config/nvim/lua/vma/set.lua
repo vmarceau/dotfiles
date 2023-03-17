@@ -1,11 +1,11 @@
 vim.opt.number = true
 vim.opt.title = true
-vim.opt.cmdheight = 2
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.updatetime = 50
 vim.opt.signcolumn = "yes"
 vim.opt.cursorline = true
+vim.opt.hidden = true
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.completeopt = "noinsert,menuone,noselect"

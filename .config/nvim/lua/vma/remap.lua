@@ -1,4 +1,4 @@
-vim.g.mapleader = "\\"
+vim.g.mapleader = " "
 
 vim.keymap.set("n", "<C-l>", ":nohl<CR><C-l>")
 vim.keymap.set("n", "<C-y>", "<C-y>k")
