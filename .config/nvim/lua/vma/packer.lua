@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
   -- Treesitter
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
 
-  -- Golan
+  -- Golang
   use({'fatih/vim-go', run = ':GoUpdateBinaries' })
 
   -- Fuzzy finder
@@ -53,4 +53,9 @@ return require('packer').startup(function(use)
       {'rafamadriz/friendly-snippets'}, -- Optional
     }
   }
+
+  -- Formatting
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'MunifTanjim/prettier.nvim'
+
 end)
