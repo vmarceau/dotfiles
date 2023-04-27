@@ -86,19 +86,6 @@ lsp.format_mapping('<leader>f', {
 
 lsp.setup()
 
-local null_ls = require('null-ls')
-local null_opts = lsp.build_options('null-ls', {})
-
-null_ls.setup({
-  on_attach = function(client, bufnr)
-    null_opts.on_attach(client, bufnr)
-  end,
-  sources = {
-    --- Replace these with the tools you have installed
-    null_ls.builtins.formatting.prettier,
-  }
-})
-
 vim.diagnostic.config({
   underline = true
 })

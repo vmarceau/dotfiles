@@ -3,9 +3,10 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<C-l>", ":nohl<CR><C-l>")
 vim.keymap.set("n", "<C-y>", "<C-y>k")
 vim.keymap.set("n", "<C-e>", "<C-e>j")
-vim.keymap.set("n", "<C-s>", ":w<CR>")
 vim.keymap.set("n", "n", "nzz")
 vim.keymap.set("n", "N", "Nzz")
+
+vim.keymap.set("n", "<C-s>", ":w<CR>")
 
 vim.keymap.set("n", "<leader>vx", "0t]rx")
 vim.keymap.set("n", "<leader>vo", "0t]r ")
