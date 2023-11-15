@@ -8,7 +8,10 @@ return require('packer').startup(function(use)
 
   -- Appearance
   use 'ellisonleao/gruvbox.nvim'
-  use 'itchyny/lightline.vim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 
   -- File tree
   use 'preservim/nerdtree'
@@ -25,7 +28,7 @@ return require('packer').startup(function(use)
 
   -- Fuzzy finder
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
