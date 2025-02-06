@@ -4,7 +4,7 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'gopls',
-  'tsserver',
+  'ts_ls',
 })
 
 -- Fix Undefined global 'vim'
@@ -33,12 +33,18 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<S-Tab>'] = cmp.mapping.select_prev_item(cmp_select),
   ['<Tab>'] = cmp.mapping.select_next_item(cmp_select),
   ['<CR>'] = cmp.mapping.confirm({ select = true }),
-  ["<C-Space>"] = cmp.mapping.complete(),
+  ['<C-Space>'] = cmp.mapping.complete(),
   ['<C-e>'] = cmp.mapping.abort(),
 })
 
 lsp.setup_nvim_cmp({
+  sources = {
+    {name = 'nvim_lsp'},
+  },
   mapping = cmp_mappings,
+  completion = {
+    autocomplete = false,
+  },
 })
 
 lsp.set_preferences({

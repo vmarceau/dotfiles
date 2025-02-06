@@ -57,6 +57,9 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- AI
+  use 'github/copilot.vim'
+
   -- Formatting
   use 'jose-elias-alvarez/null-ls.nvim'
 
