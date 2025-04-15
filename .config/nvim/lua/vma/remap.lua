@@ -23,3 +23,12 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/vma/packer.lua<CR>");
 
+vim.keymap.set("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>")
+vim.keymap.set("n", "<leader>dc", ":lua require'dap'.continue()<CR>")
+vim.keymap.set("n", "<leader>di", ":lua require'dap'.step_into()<CR>")
+vim.keymap.set("n", "<leader>do", ":lua require'dap'.step_out()<CR>")
+vim.keymap.set("n", "<leader>dv", ":lua require'dap'.step_over()<CR>")
+vim.keymap.set("n", "<leader>?", function()
+  require("dapui").eval(nil, { enter = true })
+end)
+

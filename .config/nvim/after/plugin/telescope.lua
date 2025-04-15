@@ -17,6 +17,8 @@ require('telescope').setup{
   },
 }
 
+require('telescope').load_extension('dap')
+
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<leader>tf', builtin.git_files, {})
 vim.keymap.set('n', '<leader>tg', builtin.live_grep, {})
